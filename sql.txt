@@ -1,0 +1,14 @@
+CREATE TABLE heroi(id int PRIMARY KEY, nome varchar(100), velocidade int, forca int);
+
+INSERT INTO heroi (id, nome, velocidade, forca)
+VALUES (10, 'homem aço', 100, 100);
+
+CREATE TABLE armaheroi(id int PRIMARY KEY, nome varchar(100), dano int, municao int, longaDistancia boolean);
+
+INSERT INTO armaheroi (id, nome, dano, municao, longaDistancia)
+VALUES (1, 'martelo', 100, 999, false);
+
+CREATE TABLE poder(id int PRIMARY KEY, nome varchar(100), dano int, natureza varchar(100));
+
+INSERT INTO poder (id, nome, dano, natureza)
+VALUES (1, 'fogarel', 100, 'fogo');
